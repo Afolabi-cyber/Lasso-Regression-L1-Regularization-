@@ -65,35 +65,6 @@ We build a `LassoRegression` class with the following methods:
 
 ---
 
-## **4. Example Usage**
-
-### **Generating a Sample Dataset**
-```python
-import random
-
-random.seed(42)
-
-# Generate synthetic data
-X = [[random.uniform(0, 1) for _ in range(3)] for _ in range(100)]  # 100 samples, 3 features
-y = [3 + 2*x[0] + 4*x[1] + 5*x[2] + random.gauss(0, 1) for x in X]  # Linear relation with noise
-```
-
-### **Training the Model**
-```python
-# Instantiate and train the model
-model = LassoRegression(learning_rate=0.01, iterations=1000, lambda_param=0.1)
-model.fit(X, y)
-```
-
-### **Making Predictions**
-```python
-# Predict and evaluate
-predictions = model.predict(X[:5])  # Predict for first 5 samples
-print("Predictions:", predictions)
-```
-
----
-
 ## **📌 Summary**
 ✅ **Lasso Regression** adds L1 regularization, which encourages sparsity in features.  
 ✅ The **Mean Squared Error (MSE)** is minimized with an additional **absolute penalty term**.  
