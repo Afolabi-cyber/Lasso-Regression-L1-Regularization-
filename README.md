@@ -17,6 +17,16 @@ $$
 MSE_{lasso} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} |b_j|
 $$
 
+
+
+However, the cost function now includes an **L1 regularization term**:
+
+$$
+MSE_{lasso} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} |b_j|
+$$
+
+
+
 where:
 - $y_i$ is the **actual value**.
 - $\hat{y}_i$ is the **predicted value**.
